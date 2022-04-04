@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
 import './Header.scss';
 
@@ -17,7 +18,7 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <div id="home" className='app__header app__flex'>
+    <div className='app__header app__flex'>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }} 
         transition={{ duration: 0.5 }}
@@ -25,10 +26,10 @@ const Header = () => {
       >
         <div className='app__header-badge'>
           <div className='badge-cmp app___flex'>
-            <span> 👋 </span>
+            <span> 👋🏼 </span>
             <div style={{ marginLeft: 20 }}>
               <p className='p-text'>Hello, I am </p>
-              <h1 className='head-text'>Magdalena</h1>
+              <h1 className='head-text'>Maggie</h1>
             </div>
           </div>
 
@@ -68,7 +69,7 @@ const Header = () => {
       </motion.div>
 
     </div>
-  )
-}
+  )}
 
-export default Header
+export default AppWrap(Header, 'home');
+//taka nqma da se nalaga da ima ID 1 div
