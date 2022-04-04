@@ -5,9 +5,6 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import './About.scss';
 
-import { images } from "../../constants";
-
-
 const About = () => {
     const [abouts, setAbouts] = useState([])
 
