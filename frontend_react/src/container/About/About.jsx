@@ -6,7 +6,7 @@ import { urlFor, client } from "../../client";
 import './About.scss';
 
 import { images } from "../../constants";
-import { urlFor, client } from "../../client";
+
 
 
 
